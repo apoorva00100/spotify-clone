@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side{
+    width: 310px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+}
+.side-nav{
+    background-color: rgb(37, 37, 37);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    
+}
+.side-nav .logo{
+    width: 120px;
+}
+.side-nav .logo img{
+    width: 100%;
+}
+.side-nav ul{
+    list-style: none;
+}
+.side-nav ul li{
+    padding: 10px 20px ;
+}
+.side-nav ul li a{
+    text-decoration: none;
+    color: #afacac;
+    font-size: 16px ;
+    font-weight: 600;
+}
+.side-nav ul li a:hover{
+    text-decoration: underline;
+    color: rgb(252, 252, 252);
+}
+.side-nav ul li a i{
+    margin-right: 18px;
+    font-size: 16px ;   
+}
+/**.side-nav .box2 ul li img{
+    margin-right: 100px;
+}**/
+.library::after{
+    content: "+";
+    float: right;
+    text-align: center;
+    background-color:  rgb(37, 37, 37);
+    padding: 5px;
+    border-radius: 50%;
+}
+.box1{
+    background-color: rgb(54, 53, 53);
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+.side-nav .box2{
+    height: 400px;
+}
+.scroll{
+    height: 120px;
+    overflow-y: auto;
+}
+.scroll::-webkit-scrollbar{
+    background-color: transparent;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 10px;
+}
+.scroll:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(64, 62, 62);
+    width: 4px;
+}
+.box1 h4{
+    color: rgb(249, 250, 250);
+    font-size: 15px;
+}
+.box1 p{
+    color: rgb(249, 250, 250);
+    font-size: 12px;
+    margin: 12px 0;
+}
+.box1 button{
+    padding: 8px 15px;
+    border: 0;
+    outline: none;
+    border-radius: 18px;
+    font-weight: 600;
+  
+    margin-bottom: 10px;
+}
+
+.legal ul li a{
+    text-decoration: none;
+    color: rgb(111, 110, 110);
+    font-size: 12.5px;
+    font-weight: 600;
+    margin: 0 6px;
+    margin-top: 100px;
+
+}
+.legal ul li a:hover{
+    text-decoration: underline;
+    color: rgb(177, 177, 175);
+}
+.legal ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.legal ul li{
+    padding-bottom: 5px;
+}
+.legal ul li{
+    padding: 0 12px;
+    padding-bottom: 8px;
+}
+.english{
+    padding: 20px 80px;
+}
+.english button{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: beige;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 14px 0;
+    margin-top: 25px;
+    
+}
+.english button:hover{
+    padding: 11px 31px;
+    border: 1px solid rgb(204, 201, 201);
+}
+.right{
+    margin-left: 315px;
+    background: #181818 ;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 103px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+.right::-webkit-scrollbar{
+    background-color: transparent;
+}
+.right::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 10px;
+}
+.right:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(64, 62, 62);
+    width: 5px;
+}
+.right .top-nav{
+    padding: 18px 28px;
+    background-color: rgb(14, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    
+    margin-right: 10px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px ;
+    
+    
+    opacity: 0.9;
+}
+.right .top-nav  button{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+.right .top-nav .prev button i{
+    color: #d2cece;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.top-nav .login .sign {
+    color: #8a8787;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 16px;
+     
+}
+.top-nav .login .sign:hover{
+    color: aliceblue;
+}
+.top-nav .login .log {
+    color: #111010;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 20px;
+     
+}
+.top-nav .login .log:hover {
+    background-color: #747272;
+}
+.playlist{
+     
+    padding: 20px 40px;
+
+}
+.playlist h2{
+    color: azure;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.playlist .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.playlist .card .item{
+    width: 200px;
+    min-height: 140px;
+    background-color: #2a2929;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 6px;
+}
+.playlist .card .item:hover{
+    background-color: #494949;
+}
+.playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  
+}
+.playlist .item h4{
+    color: aliceblue;
+}
+.playlist .item p{
+    color: rgb(182, 185, 189);
+    font-size: 13px;
+    margin-top: 10px;
+}
+.playlist .item p:hover{
+    text-decoration: underline;
+}
+.playlist .play-btn{
+    position: relative;
+}
+.playlist .play-btn i{
+    position: absolute;
+    background: rgb(67, 247, 67);
+    border-radius: 50%;
+    padding: 10px;
+    right: 8px;
+    top: -40px;
+    opacity: 0;
+    transition: 0.1s ease all;
+}
+.playlist .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-20px) ;
+}
+.footer-sec{
+    padding: 20px 40px;
+}
+.footer-sec .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+}
+.footer-sec .footer .footer-l{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-sec .footer .footer-l .f-column{
+    margin: 0 12px;
+    color: aliceblue;
+    
+    
+}
+.footer-sec .footer .footer-l div{
+    color: aliceblue;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+    
+}
+.footer-sec .footer .footer-l ul li{
+   list-style: none;
+   margin: 6px 0;
+}
+.footer-sec .footer .footer-l ul li a{
+    text-decoration: none;
+    color: #afacac;
+    font-size: 14px;
+    cursor: pointer;
+ }
+ .footer-sec .footer .footer-l ul li a:hover{
+    text-decoration: underline;
+    color: #fefdfd;
+ }
+ .footer .social i{
+    color: white;
+    background-color: #333232;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1px 5px;
+ }
+ .footer .social i:hover{
+    
+    background-color: #707070;
+    
+ }
+hr{
+    padding:0px 210px;
+    border: 0;
+    
+    outline: 0;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 40px ;
+    border: 1px solid grey;
+ }
+ .copy{
+    padding: 0 40px;
+    color: #afacac ;
+    margin-top: 40px ;
+   
+    font-size: 15px;
+    margin-bottom: 80px;
+ }
+ .preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ef149f, #509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 40px;
+
+ }
+ .preview h4{
+    font-size: 13px;
+     font-weight: 600;
+     margin-bottom: 10px;
+     color: #fff;
+     
+ }
+ .preview p{
+    font-size: 16px;
+    
+     color: #fff;
+     
+ }
+ .preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+ }
+
+
+ .playlist1{
+    
+    margin-bottom: 17px;
+   
+
+}
+.playlist1 h2{
+    color: azure;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.playlist1 .card1{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.playlist1 .card1 .item1{
+    width: 220px;
+    min-height: 160px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 6px;
+}
+.playlist1 .card1 .item1:hover{
+    background-color: #494949;
+}
+.playlist1 .card1 .item1 img{
+    width: 100%;
+    border-radius: 47%;
+    margin-bottom: 10px;
+  
+}
+.playlist1 .item1 h4{
+    color: aliceblue;
+}
+.playlist1 .item1 p{
+    color: rgb(182, 185, 189);
+    font-size: 13px;
+    margin-top: 10px;
+}
+.playlist1 .item1 p:hover{
+    text-decoration: underline;
+}
+.playlist1 .play-btn1{
+    position: relative;
+}
+.playlist1 .play-btn1 i{
+    position: absolute;
+    background: rgb(67, 247, 67);
+    border-radius: 49%;
+    padding: 10px;
+    right: 8px;
+    top: -40px;
+    opacity: 0;
+    transition: 0.1s ease all;
+}
+.playlist1 .card1 .item1:hover .play-btn1 i{
+    opacity: 1;
+    transform: translateY(-20px) ;
+}
